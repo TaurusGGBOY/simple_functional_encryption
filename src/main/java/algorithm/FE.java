@@ -56,7 +56,6 @@ public class FE {
         Element sky;
     }
 
-
     class SetupParams{
         public SetupParams(MPK mpk, MSK msk) {
             this.mpk = mpk;
@@ -144,6 +143,7 @@ public class FE {
 
         return setupParams;
     }
+
     public SKY keyDer(Params params, MSK msk, List<Element> y){
         Element sky = params.pairing.getZr().newZeroElement();
         for (int i = 0; i < y.size(); i++) {

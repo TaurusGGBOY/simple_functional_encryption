@@ -18,7 +18,6 @@ public class FETest {
 
         FE fe = new FE();
 
-
         // setup
         LocalDateTime startSetup = LocalDateTime.now();
         FE.SetupParams setupParams = fe.setup(lambda, ell);
@@ -61,7 +60,7 @@ public class FETest {
 
         System.out.println("setupTime: " + setupDuration.toMillis());
         System.out.println("keyDerTime: " + keyDerDuration.toMillis());
-        System.out.println("encrytTime: " + encryptDuration.toMillis());
+        System.out.println("encryptTime: " + encryptDuration.toMillis());
         System.out.println("decryptTime: " + decryptDuration.toMillis());
     }
 
